@@ -14,6 +14,9 @@
 		A6A21C912A715D200038A2B8 /* FaceMeshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A21C902A715D200038A2B8 /* FaceMeshTests.swift */; };
 		A6A21C9B2A715D200038A2B8 /* FaceMeshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A21C9A2A715D200038A2B8 /* FaceMeshUITests.swift */; };
 		A6A21C9D2A715D200038A2B8 /* FaceMeshUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A21C9C2A715D200038A2B8 /* FaceMeshUITestsLaunchTests.swift */; };
+		A6A21CAA2A715F380038A2B8 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A21CA92A715F380038A2B8 /* FaceNode.swift */; };
+		A6A21CAC2A7160BC0038A2B8 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A21CAB2A7160BC0038A2B8 /* ARView.swift */; };
+		A6A21CAE2A7161C80038A2B8 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A21CAD2A7161C80038A2B8 /* ARViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		A6A21C962A715D200038A2B8 /* FaceMeshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceMeshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A21C9A2A715D200038A2B8 /* FaceMeshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMeshUITests.swift; sourceTree = "<group>"; };
 		A6A21C9C2A715D200038A2B8 /* FaceMeshUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMeshUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A6A21CA92A715F380038A2B8 /* FaceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceNode.swift; sourceTree = "<group>"; };
+		A6A21CAB2A7160BC0038A2B8 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		A6A21CAD2A7161C80038A2B8 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				A6A21C7F2A715D1F0038A2B8 /* FaceMeshApp.swift */,
 				A6A21C812A715D1F0038A2B8 /* ContentView.swift */,
+				A6A21CAB2A7160BC0038A2B8 /* ARView.swift */,
+				A6A21CAD2A7161C80038A2B8 /* ARViewController.swift */,
+				A6A21CA92A715F380038A2B8 /* FaceNode.swift */,
 				A6A21C832A715D200038A2B8 /* Assets.xcassets */,
 				A6A21C852A715D200038A2B8 /* Preview Content */,
 			);
@@ -258,7 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6A21C822A715D1F0038A2B8 /* ContentView.swift in Sources */,
+				A6A21CAC2A7160BC0038A2B8 /* ARView.swift in Sources */,
 				A6A21C802A715D1F0038A2B8 /* FaceMeshApp.swift in Sources */,
+				A6A21CAA2A715F380038A2B8 /* FaceNode.swift in Sources */,
+				A6A21CAE2A7161C80038A2B8 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,9 +432,11 @@
 				DEVELOPMENT_TEAM = L45GPKVRUG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(EXECUTABLE_NAME) needs access to camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,9 +463,11 @@
 				DEVELOPMENT_TEAM = L45GPKVRUG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(EXECUTABLE_NAME) needs access to camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
